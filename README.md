@@ -101,6 +101,36 @@ Then we can type code below to check if it is successfully installed.
 
  ![3](https://github.com/ACM40960/project-20211696/blob/main/images/3.png)
  
+### Data pre-processing
+
+ All images here are not of the same size and shape, 
+so to prepare the model we need to resize the images to the same size square. 
+Here images are reshaped to 180x180 pixels and rescaling by 255.
+
+ Moreover, we'll use data augmentation on training data, we randomly flip half of the images horizontally, followed by panning the images horizontally and vertically.
+ We also randomly scale the images, randomly stagger transform, and randomly rotate them. 
+
+    test_datagen = ImageDataGenerator(rescale=1./255)  # for validation and test data 
+    train_datagen =tf.keras.preprocessing.image.ImageDataGenerator(
+    rescale=1. / 255,
+    rotation_range=40,
+    width_shift_range=0.2,
+    height_shift_range=0.2,
+    shear_range=0.2,
+    zoom_range=0.2,
+    fill_mode="nearest",
+    horizontal_flip=True)    # for train data
+
+    train_generator = train_datagen.flow_from_directory(
+    train_dir,  
+    target_size=(180,180),  
+    batch_size=50,
+    class_mode="binary" )
+    validation_generator = test_datagen.flow_from_directory(
+    validation_dir, 
+    target_size=(180,180),  
+    batch_size=50,
+    class_mode="binary"  )
 
 ## 4.Model construction & fit
 
