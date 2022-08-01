@@ -124,11 +124,11 @@ The model training process is visualized as follows：
 
 **Accuracy**
 
-![4]()
+![4](https://github.com/ACM40960/project-20211696/blob/main/images/4.jpeg)
 
 **Loss**
 
-![5]()
+![5](https://github.com/ACM40960/project-20211696/blob/main/images/5.jpeg)
 
 Now we can see our classifier has an accuracy of approximately 82.99% and a loss of about 0.3841.
 This is an acceptable result and we will further see how it performs on the test set.
