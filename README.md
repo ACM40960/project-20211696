@@ -32,7 +32,7 @@
     os.mkdir(test_dir)
  _The created folders are as follows：_
 
- ！[1]()
+ ![1](https://github.com/ACM40960/project-20211696/blob/main/images/2.jpeg)
 
   **Secondly**, under each folder we create two new folders names "dog" and "cat".
 
@@ -51,6 +51,8 @@
 
   _The created folders are as follows：_
 
- ! [2]()
+ ![2](https://github.com/ACM40960/project-20211696/blob/main/images/1.png)
 
   **At last**，we will put the images we need into these files.
+
+ ![3](https://github.com/ACM40960/project-20211696/blob/main/images/3.png)
