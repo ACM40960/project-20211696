@@ -29,7 +29,7 @@
  
 _Check python version:_
  
-![6](https://github.com/ACM40960/project-20211696/blob/main/images/WechatIMG348.png)
+![6](https://github.com/ACM40960/project-20211696/blob/main/images/6.png)
 
 _Check laptop system_
 
