@@ -22,11 +22,11 @@
  
 _Check python version:_
  
-![6]()
+![6](https://github.com/ACM40960/project-20211696/blob/main/images/WechatIMG348.png)
 
 _Check laptop system_
 
-![7]()
+![7](https://github.com/ACM40960/project-20211696/blob/main/images/7.png)
 
 I chose the latest version of tensorflow, tensorflow-2.9.0.
 
