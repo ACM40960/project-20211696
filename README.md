@@ -57,6 +57,7 @@
 
  ![3](https://github.com/ACM40960/project-20211696/blob/main/images/3.png)
  
+
 ## 4.Model construction & fit
 
 ### Model building
@@ -132,3 +133,29 @@ The model training process is visualized as follows：
 
 Now we can see our classifier has an accuracy of approximately 82.99% and a loss of about 0.3841.
 This is an acceptable result and we will further see how it performs on the test set.
+
+## 5.Model evaluation
+ After model fitting we will test our model on test data.
+ **Firstly**, test images are reshaped to 180x180 pixels and rescaling by 255.
+ 
+    test_generator = test_datagen.flow_from_directory(
+    test_dir,  
+    target_size=(180,180),  
+    batch_size=20,
+    class_mode="binary")
+
+ **Next**, we evaluate the model.
+  
+    model.evaluate(test_generator)
+ 
+ **Our test result are as follows：**
+
+ <div align="center">
+
+| Accuracy  | Loss|
+| ---------- | -----------|
+| 77.75%  | 0.4548   |
+
+</div>
+
+The results on the brand completely new test dataset are 77.75% accuracy and a loss of 0.4548, which means this model will help us to identify cats and dogs in a reliable way.
