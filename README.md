@@ -9,8 +9,37 @@
 
 ## 2.Tools & Installation
  The main tool we use in this project is the Keras library in python, which is an open source artificial neural network library written in Python. keras is built on top of tensorflow, so you need to install tensorflow before installing keras.
-### 2.1
+
+### Editor
+ The python editor I use is jupyter, it needs to be downloaded from Anaconda or Miniconda, you can go to the download page via the link.
  
+ [Anaconda](https://www.anaconda.com/)
+ [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+
+### TensorFlow
+ First you need to check your python version and your computer system version,
+ then go to the official tensorflow website[link](https://www.tensorflow.org/install/source) and choose the right tensorflow version to download.
+ 
+_Check python version:_
+
+![6]()
+
+_Check laptop system_
+
+![7]()
+
+I chose the latest version of tensorflow, tensorflow-2.9.0.
+
+To install it we need to type in computer base（not jupyter note!）. 
+
+    python -m pip install tensorflow==2.9.0
+
+Then we can type code below to check if it is successfully installed.
+
+    import tensorflow as tf
+    tf.__version__
+
+
 
 ## 3.Data & Preparing
 ### Dataset source
@@ -159,3 +188,8 @@ This is an acceptable result and we will further see how it performs on the test
 </div>
 
 The results on the brand completely new test dataset are 77.75% accuracy and a loss of 0.4548, which means this model will help us to identify cats and dogs in a reliable way.
+
+## Additional Statements
+ More details can be viewed in [project](https://github.com/ACM40960/project-20211696/blob/main/Final%20Report.pdf), please refer to the code details, the total time of the code run is about one hour.
+ 
+ Thanks for your reading!
