@@ -56,3 +56,79 @@
   **At last**，we will put the images we need into these files.
 
  ![3](https://github.com/ACM40960/project-20211696/blob/main/images/3.png)
+ 
+## 4.Model construction & fit
+
+### Model building
+
+ In this part we specify a CNN model with four convolutional layers,
+ interleaved with four pooling layers, and then followed three fully connected layers.
+ The first convolution layer is set with 32 filters and a 3 × 3 kernel with default strides.
+ The second convolution layer is set with 64 filters, with 3 × 3 kernels. 
+ The following two convolution layers are set with 128 filters, with 3 × 3 kernels. All max-pooling layers have a pool size of 2 × 2,
+ thus halving width and height at every pass. In the fully connected layers, we add dropout = 0.2.
+
+    model = tf.keras.models.Sequential([
+        tf.keras.layers.Conv2D(32,(3,3),activation = "relu" , input_shape = (180,180,3)) ,
+        tf.keras.layers.MaxPooling2D((2,2)),
+        tf.keras.layers.Conv2D(64,(3,3),activation = "relu") ,  
+        tf.keras.layers.MaxPooling2D((2,2)),
+        tf.keras.layers.Conv2D(128,(3,3),activation = "relu") ,  
+        tf.keras.layers.MaxPooling2D((2,2)),
+        tf.keras.layers.Conv2D(128,(3,3),activation = "relu"),  
+        tf.keras.layers.MaxPooling2D((2,2)),
+        tf.keras.layers.Flatten(), 
+        tf.keras.layers.Dropout(0.2),
+    
+        tf.keras.layers.Dense(1000,activation="relu"),      #Adding the Hidden layer
+    
+    
+        tf.keras.layers.Dense(100,activation="relu"),
+        tf.keras.layers.Dense(1,activation = "sigmoid")   #Adding the Output Layer
+    ])
+
+ Then we further set the neural network parameters.Then we further set the neural network model parameters. We choose the optimizer RMSProp, 
+ set the learning rate to be 0.0001, and choose binary_crossentropy as the loss function since it is a binary classification problem.
+ 
+    from tensorflow.keras import optimizers
+    model.compile(loss="binary_crossentropy",
+             optimizer=optimizers.RMSprop(learning_rate=1e-4),
+             metrics=["acc"])
+
+### Model fitting
+
+We used the processed training and validation data for model fitting, setting 100 epochs.
+
+    history = model.fit(
+    train_generator,
+    epochs=100,  
+    validation_data=validation_generator,  )
+
+The model training process is visualized as follows：
+
+    epochs = range(1, len(acc)+1)
+    # acc
+    plt.figure(figsize=(10, 6), dpi=80)
+    plt.plot(epochs, acc, color='orange', linestyle=':', marker='.', markersize=7, label="Training acc")
+    plt.plot(epochs, val_acc, color='blue', linestyle=':', marker='.', markersize=7, label="Validation acc")
+    plt.title("Training and Validation acc")
+    plt.legend()
+    plt.grid(alpha=0.8)
+    # loss
+    plt.figure(figsize=(10, 6),dpi=80)
+    plt.plot(epochs, loss, label="Training loss",color='orange', linestyle=':', marker='.', markersize=7)
+    plt.plot(epochs, val_loss,label="Validation loss",color='blue', linestyle=':', marker='.', markersize=7)
+    plt.title("Training and Validation loss")
+    plt.legend()
+    plt.grid(alpha=0.8)
+
+**Accuracy**
+
+![4]()
+
+**Loss**
+
+![5]()
+
+Now we can see our classifier has an accuracy of approximately 82.99% and a loss of about 0.3841.
+This is an acceptable result and we will further see how it performs on the test set.
