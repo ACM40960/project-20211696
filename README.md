@@ -2,6 +2,13 @@
 
 ## Table of contents
 
+### [1.Introduction](https://github.com/ACM40960/project-20211696#1introduction)
+### [2.Tools & Installation](https://github.com/ACM40960/project-20211696#2tools--installation)
+### [3.Data & Preparing](https://github.com/ACM40960/project-20211696#3data--preparing)
+### [4.Model construction & fit](https://github.com/ACM40960/project-20211696#4model-construction--fit)
+### [5.Model evaluation](https://github.com/ACM40960/project-20211696#5model-evaluation)
+### [Additional Statements](https://github.com/ACM40960/project-20211696#additional-statements)
+
 ## 1.Introduction
  In this project, deep learning approach is used to build a convolutional neural network to achieve binary classification. 
  CNN can take an image as input and learn features of the image, and classify based on the learned characteristics.
@@ -234,7 +241,7 @@ This is an acceptable result and we will further see how it performs on the test
 
 The results on the brand completely new test dataset are 77.75% accuracy and a loss of 0.4548, which means this model will help us to identify cats and dogs in a reliable way.
 
-## Additional Statements
- More details can be viewed in [project](https://github.com/ACM40960/project-20211696/blob/main/Final%20Report.pdf), please refer to the code details, the total time of the code run is about one hour.
+## 6.Additional Statements
+ More details can be viewed in [project](https://github.com/ACM40960/project-20211696/blob/main/Final%20Report.pdf), please refer to the code details in project.ipynb, the total time of the code run is about one hour.
  
  Thanks for your reading!
