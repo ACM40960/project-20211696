@@ -3,7 +3,6 @@
 ![8](https://github.com/ACM40960/project-20211696/blob/main/images/8.jpeg)
 
 ## Table of contents
-
 ### [1.Introduction](https://github.com/ACM40960/project-20211696#1introduction)
 ### [2.Tools & Installation](https://github.com/ACM40960/project-20211696#2tools--installation)
 ### [3.Data & Preparing](https://github.com/ACM40960/project-20211696#3data--preparing)
@@ -12,6 +11,7 @@
 ### [Additional Statements](https://github.com/ACM40960/project-20211696#additional-statements)
 
 ## 1.Introduction
+
  In this project, deep learning approach is used to build a convolutional neural network to achieve binary classification. 
  CNN can take an image as input and learn features of the image, and classify based on the learned characteristics.
  Then we train and evaluate the classifier on Kaggle’s dog vs. cat data set.
