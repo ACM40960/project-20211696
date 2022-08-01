@@ -21,7 +21,7 @@
  then go to the official tensorflow website[link](https://www.tensorflow.org/install/source) and choose the right tensorflow version to download.
  
 _Check python version:_
-
+ 
 ![6]()
 
 _Check laptop system_
@@ -38,6 +38,21 @@ Then we can type code below to check if it is successfully installed.
 
     import tensorflow as tf
     tf.__version__
+
+### Other libraries
+
+ We also need some other packages, we can import them directly via jupyter notebook.
+    
+    import cv2
+    import os, shutil
+    import tensorflow as tf
+    from keras import layers 
+    from keras import models
+    from tensorflow.keras import optimizers
+    from keras.preprocessing.image import ImageDataGenerator
+    import PIL
+    from PIL import Image
+    import matplotlib.pyplot as plt
 
 
 
