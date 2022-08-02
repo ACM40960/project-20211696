@@ -1,5 +1,7 @@
 # <div align="center">**Dog and cat image recognition based on convolutional neural network**
 
+![python](https://img.shields.io/badge/python-3.9.13-yellow.svg)] ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.9.0-orange.svg)]
+
 ![8](https://github.com/ACM40960/project-20211696/blob/main/images/9.jpeg)
 
 ## Table of contents
