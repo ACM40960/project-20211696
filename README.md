@@ -29,7 +29,7 @@
 
 ### TensorFlow
  First you need to check your python version and your computer system version,
- then go to the official tensorflow website[link](https://www.tensorflow.org/install/source) and choose the right tensorflow version to download.
+ then go to the official tensorflow website [link](https://www.tensorflow.org/install/source) and choose the right tensorflow version to download.
  
 _Check python version:_
  
