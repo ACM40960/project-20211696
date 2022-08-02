@@ -7,7 +7,7 @@
 ## Table of contents
 ### [1.Introduction](https://github.com/ACM40960/project-20211696#1introduction)
 ### [2.Tools & Installation](https://github.com/ACM40960/project-20211696#2tools--installation)
-### [3.Data & Preparing](https://github.com/ACM40960/project-20211696#3data--preparing)
+### [3.Data & Preparing](https://github.com/ACM40960/project-20211696#3data--preparing-1)
 ### [4.Model construction & fit](https://github.com/ACM40960/project-20211696#4model-construction--fit)
 ### [5.Model evaluation](https://github.com/ACM40960/project-20211696#5model-evaluation)
 ### [6.Additional Statements](https://github.com/ACM40960/project-20211696#additional-statements)
