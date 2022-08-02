@@ -245,6 +245,7 @@ This is an acceptable result and we will further see how it performs on the test
 
 The results on the brand completely new test dataset are 77.75% accuracy and a loss of 0.4548, which means this model will help us to identify cats and dogs in a reliable way.
 
+
 ## 6.Additional Statements
  More details can be viewed in [project](https://github.com/ACM40960/project-20211696/blob/main/Final%20Report.pdf), please refer to the code details in [project.ipynb](https://github.com/ACM40960/project-20211696/blob/main/project.ipynb), the total time of the code run is about one hour.
  
