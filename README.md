@@ -10,7 +10,7 @@
 ### [3.Data & Preparing](https://github.com/ACM40960/project-20211696#3data--preparing-1)
 ### [4.Model construction & fit](https://github.com/ACM40960/project-20211696#4model-construction--fit-1)
 ### [5.Model evaluation](https://github.com/ACM40960/project-20211696#5model-evaluation-1)
-### [6.Additional Statements](https://github.com/ACM40960/project-20211696#additional-statements-1)
+### [6.Additional Statements](https://github.com/ACM40960/project-20211696#additional-statements)
 
 ## 1.Introduction
 
